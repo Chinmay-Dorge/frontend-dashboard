@@ -1,0 +1,53 @@
+.App{
+    background-color: #f6f6f6 ;
+}
+
+.graphs{
+    display: flex;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+}
+
+.leftGraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-right: solid;
+}
+
+.rightGraph{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.lifeSaved{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ageBucket{
+    padding: 40px;
+}
+
+.chars{
+    padding: 40px;
+}
+
+.adoptTime{
+    padding: 40px;
+}
+
+.breed{
+    padding: 40px;
+}
+
+.intro h2{
+    padding: 0px;
+    margin: 0px
+}
+
+.intro{
+    padding: 10px 0px 10px 50px;
+}
