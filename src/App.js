@@ -11,7 +11,10 @@ function App() {
     datasets: [{
         label: "Lives Saved",
         data: [null, 2000, 4000, 7000, 10000, 11000, null],
-        backgroundColor: '#ace6ea'
+        backgroundColor: '#e3f2f3',
+        borderColor: '#ace6ea',
+        fill: true,
+        pointRadius: 0.1
     }]
   }
 
@@ -20,7 +23,10 @@ function App() {
     datasets: [{
         label: "Avg Time to Adopt Over Time",
         data: [null, 39, 50, 55, 40, 42, 60, null],
-        backgroundColor: '#ace6ea'
+        backgroundColor: '#e3f2f3',
+        borderColor: '#ace6ea',
+        fill: true,
+        pointRadius: 0.1
       }
     ]
   }
@@ -63,6 +69,8 @@ function App() {
     
   ]
   }
+
+  // Options for each graph
 
   const lineOptions ={
     maintainAspectRatio: false,
@@ -118,6 +126,7 @@ function App() {
             <h2 style={{textAlign: 'center'}}>Avg Time to Adopt</h2>
             <h2 style={{textAlign: 'center'}}>45 days</h2>
             <BarChart chartData={ageData} options={barOptions}/>
+            <p style={{textAlign: 'center', fontSize: '12px', fontWeight: 'bolder'}}>Note: Starts at Date of Transport</p>
           </div>
 
           <div className="chars graph">
